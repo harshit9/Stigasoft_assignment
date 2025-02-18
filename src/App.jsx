@@ -5,7 +5,7 @@ import { DataProvider } from "./context/DataContext"
 function App() {
   return (
     <DataProvider>
-      <div className="flex flex-col items-center justify-center">
+      <div className="flex flex-col bg-gray-900 min-h-dvh">
         <Navbar />
         <Tvl />
       </div>
