@@ -1,11 +1,15 @@
-import './App.css'
+import Navbar from "./components/Navbar"
+import Tvl from "./components/Tvl"
+import { DataProvider } from "./context/DataContext"
 
 function App() {
-
   return (
-    <div className="h-screen flex items-center justify-center">
-      <h1 className='text-red-500  text-4xl'>hahahaha</h1>
-    </div>
+    <DataProvider>
+      <div className="flex flex-col items-center justify-center">
+        <Navbar />
+        <Tvl />
+      </div>
+    </DataProvider>
   )
 }
 
